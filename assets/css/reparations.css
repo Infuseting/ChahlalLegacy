@@ -1,0 +1,114 @@
+
+main{
+    width: 100%;
+    height: auto !important;
+    position: relative;
+    top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    
+}
+main .container{
+    margin: 16em 24em 16em 24em;
+    height: 100%;
+    width: 100%;
+}
+main .container h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: xx-large;
+}
+main .container p{
+    text-align: center;
+    font-size:large;
+    padding-left: 10em;
+    padding-right:10em;
+}
+.btn{
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+    color: var(--active-primary-color);
+    transition: all 0.5s;
+    position: relative;
+    margin: 4em auto 4em auto;
+    
+}
+.btn span{
+    color: var(--active-primary-color);
+    
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: var(--active-primary-color);
+    transition: all 0.3s;
+}
+.btn:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid var(--active-primary-color);
+    transform: scale(1.2,1.2);
+}
+.btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+body .contact{
+    position: fixed;
+    z-index: 100;
+    width: 30%;
+    height: 50%;
+    top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+    border: 2px solid var(--text);
+    border-radius: 75px;
+    background-color: var(--secondary-color);
+}
+body .contact h1{
+    text-align: center;
+}
+body .contact .textarea{
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding-left: 2em;
+}
+body .contact .textarea i{
+    align-self: center;
+    padding: 0vh 2vh 0vh 2vh;
+    width: 32px;
+    height: 32px;
+}
+body .contact .btn{
+    margin-top: 2em;
+}
+
+body div.hidden{
+    display:none;
+}
+.word{
+    color: var( --secondary-color);
+    background-color: var(--active-primary-color)
+}

@@ -1,0 +1,56 @@
+
+main{
+    position: relative;
+    top: 6em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+}
+main .container{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    flex: 1 1 100%;
+    height: 50vh;
+    display:flex;
+    flex-flow:row;
+    position: relative;
+}
+main .container div{
+    box-sizing: border-box;
+    max-height: 100%;
+    padding : 8em 8em 8em 8em;
+    width: 50%;
+    height: 100%;
+}
+main .container .left{
+    left: 0;
+}
+main .container .left.img, .right.img{
+    padding: 2em 2em 2em 2em;
+}
+
+main .container h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+main .container p{
+    font-size: 20px;
+}
+main .container img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+main .container:nth-child(2n+1){
+    background-color: var(--active-secondary-color);
+}
+
+
+main .container:nth-child(2n){
+    background-color: var(--hover-secondary-color);
+}

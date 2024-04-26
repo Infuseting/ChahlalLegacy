@@ -1,0 +1,28 @@
+
+main{
+    width: 100%;
+    height: auto !important;
+    position: relative;
+    top: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    
+}
+main .container{
+    margin: 16em 24em 16em 24em;
+    height: 100%;
+    width: 100%;
+}
+main .container h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text);
+    font-size: xx-large;
+}
+main .container p{
+    text-align: center;
+    font-size:large;
+    padding-left: 10em;
+    padding-right:10em;
+}
