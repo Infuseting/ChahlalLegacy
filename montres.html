@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chahlal Legacy - Nos montres</title>
+        <link rel="stylesheet" href="assets/css/login.css">
+        <link rel="stylesheet" href="assets/css/montres.css">
+        <link rel="stylesheet" href="assets/css/headfoot.css">
+        
+        <script src="https://kit.fontawesome.com/b1eeef337c.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+    </head>
+    <body>
+        <header>
+            <img src="assets/img/logo.png">
+            <div class="burgerMenuLine">
+              <span class="burgerMenuLines line1"></span>
+              <span class="burgerMenuLines line2"></span>
+              <span class="burgerMenuLines line3"></span>
+            </div>
+            <div class="burgerMenu-items">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="montres.html">Nos Montres</a></li>
+                <li><a href="reparations.html">réparations</a></li>
+                <li><a href="about.html">A propos</a></li>
+            </div>
+            <i class="fa-solid fa-user"></i>
+        </header>
+        <div class="login  hidden">
+            <div class="left">
+                <div class="login-container">
+                    <h2>Login</h2>
+                    <form class="login-form">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                        <button type="submit">Log In</button>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="btn btnClose">
+                <span>Close</span>
+            </div>
+            <div class="right">
+                <div class="signup-container">
+                    <h2>S'inscrire</h2>
+                    <form class="signup-form">
+                        <label for="username">Nom d'utilisateur:</label>
+                        <input type="text" id="username" name="username" placeholder="Entrez votre nom d'utilisateur" required>
+                        <div class="identity">
+                            <div class="prenom-input">
+                                <label for="prenom">Prenom:</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre Prenom" required>
+                            </div>
+                            <div class="nom-input">
+                                <label for="nom">Nom:</label>
+                                <input type="text" id="nom" name="nom" placeholder="Entrez votre Nom" required>
+                            </div>
+                        </div>
+                        
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                        <label for="pays">Pays:</label>
+                        <input type="text" id="pays" name="pays" placeholder="Entrez votre pays" required>
+                        <div class="lieu">
+                            <div class="ville-input">
+                                <label for="ville">Ville:</label>
+                                <input type="text" id="ville" name="ville" placeholder="Entrez votre ville" required>    
+                            </div>
+                            <div class="cpostal-input">
+                                <label for="cpostal">Code Postal:</label>
+                                <input type="text" id="codepostal" name="codepostal" placeholder="Entrez votre Code Postal" required>
+                          
+                            </div>
+                        
+                        </div>
+                        <label for="password">Mot de passe:</label>
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            
+                        <button type="submit">S'inscrire</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card-buy hidden">
+            
+            <div class="container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="front">
+                            <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                            <div class="row">
+                                <img src="https://i.ibb.co/G9pDnYJ/chip.png" width="60px">
+                                <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="60px">
+                            </div>
+                            <div class="row card-no">
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                                <p></p>
+                            </div>
+                            <div class="row card-holder">
+                                <p>CARD HPLDER</p>
+                                <p>VALID TILL</p>
+                            </div>
+                            <div class="row name">
+                                <p></p>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                            <div class="bar"></div>
+                            <div class="row card-cvv">
+                                <div>
+                                    <img src="https://i.ibb.co/S6JG8px/pattern.png">
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="row signature">
+                                <p>CUSTOMER SIGNATURE</p>
+                                <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="80px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <div>
+                        <div class="field-container">
+                            <input id="name" maxlength="20" type="text" placeholder="Nom">
+                        </div>
+                        <div class="field-container">
+                            <input id="expirationdate" type="text" pattern="[0-9]" inputmode="numeric" placeholder="Date d'expirations">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="field-container">
+                            <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Code">
+                            </div>
+                        <br>
+                        
+                        <div class="field-container">
+                            <input id="securitycode" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Code de securité">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="btn btnContinue btnCreditCardContinue">
+                    <span>Continuer</span>
+                </div>
+            
+            </div>
+            
+        </div>
+        <div class="card-location hidden">
+            <div class="container">
+                <input id="nom" type="text" placeholder="Nom">
+                <input id="prenom" type="text" placeholder="Prenom">
+                <input id="email" type="text" placeholder="Email">
+                <input id="Adresse" type="text" placeholder="Adresse">
+                <input id="CodePostal" type="text" placeholder="Code Postal">
+                <input id="Ville" type="text" placeholder="Ville">
+                <select class="codePays" id="pays" name="Destinataire.Pays">
+                    <option value="DE">Allemagne</option>
+                    <option value="AT">Autriche</option>
+                    <option value="BE">Belgique</option>
+                    <option value="ES">Espagne</option>
+                    <option selected="selected" value="FR">France</option>
+                    <option value="IT">Italie</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="NL">Pays Bas</option>
+                    <option value="PT">Portugal</option>
+                </select>   
+                <div class="btn btnContinue btnCreditCardContinue">
+                    <span>Continuer</span>
+                </div>
+            </div>
+           
+        </div>
+        <main>
+            <div class="first-part">
+                <h1>Vous souhaitez <span class="word">acheter</span> une nouvelle <span class="word">montre</span> !</h1>
+                <p>Nous proposons une large gamme de montre de divers marque tels que <span class="word">Seiko</span>, <span class="word">Casio</span>, <span class="word">Rolex</span>, <span class="word">Jacob&Co</span>, <span class="word">Audmart Piguet</span></p>
+                <div class="center">
+                    <input type="search" class="search-bar" id="search" name="q" placeholder="Barre de Recherche"/>
+                </div>
+                
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Casio Argentée Mecanique</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel1">
+                                  <img src="assets/img/IMG_4824.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel1">
+                                  <img src="assets/img/IMG_4825.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel1">
+                                  <img src="assets/img/IMG_4826.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                            </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel2">
+                                  <img src="assets/img/IMG_4827.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel2">
+                                  <img src="assets/img/IMG_4828.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel2">
+                                  <img src="assets/img/IMG_4829.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel3">
+                                  <img src="assets/img/IMG_4830.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel3">
+                                  <img src="assets/img/IMG_4831.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel3">
+                                  <img src="assets/img/IMG_4832.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel4">
+                                  <img src="assets/img/IMG_4833.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel4">
+                                  <img src="assets/img/IMG_4834.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel4">
+                                  <img src="assets/img/IMG_4835.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>   
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel5">
+                                  <img src="assets/img/IMG_4836.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel5">
+                                  <img src="assets/img/IMG_4837.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel5">
+                                  <img src="assets/img/IMG_4838.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div> 
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel6">
+                                  <img src="assets/img/IMG_4839.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel6">
+                                  <img src="assets/img/IMG_4840.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel6">
+                                  <img src="assets/img/IMG_4841.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel7">
+                                  <img src="assets/img/IMG_4871.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel7">
+                                  <img src="assets/img/IMG_4874.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel7">
+                                  <img src="assets/img/IMG_4875.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel8">
+                                  <img src="assets/img/IMG_4870.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel8">
+                                  <img src="assets/img/IMG_4867.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel8">
+                                  <img src="assets/img/IMG_4868.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 7)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel9">
+                                  <img src="assets/img/IMG_4861.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel9">
+                                  <img src="assets/img/IMG_4864.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel9">
+                                  <img src="assets/img/IMG_4862.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 8)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 8)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel10">
+                                  <img src="assets/img/IMG_4860.jpg" style="width:100%">
+                                </div>
+                              
+                              
+                                <a class="prev" onclick="plusSlides(-1, 9)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 9)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel11">
+                                  <img src="assets/img/IMG_4858.jpg" style="width:100%">
+                                </div>
+                              
+                              
+                                <a class="prev" onclick="plusSlides(-1, 10)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 10)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel12">
+                                  <img src="assets/img/IMG_4869.jpg" style="width:100%">
+                                </div>
+                              
+                              
+                                <a class="prev" onclick="plusSlides(-1, 11)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 11)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                
+                <!--<div class="card">
+                    <div class="card-content">
+                        <h2>Seiko Verte</h2>
+                        <div class="carousel">
+                            <div class="slideshow-container">
+                                <div class="Carousel<valeur au dessus + 1>">
+                                  <img src="assets/img/IMG_4839.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel6">
+                                  <img src="assets/img/IMG_4840.jpg" style="width:100%">
+                                </div>
+                              
+                                <div class="Carousel6">
+                                  <img src="assets/img/IMG_4841.jpg" style="width:100%">
+                                </div>
+                              
+                                <a class="prev" onclick="plusSlides(-1, 5<+1>)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 5<+1>)">&#10095;</a>
+                              </div>
+                            
+                        </div>
+                        <div class="text-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam omnis sint nisi corporis dolores facilis voluptatem fugit. Non debitis omnis, sit dolor similique doloremque dolorem iusto labore, voluptas, ullam temporibus.</p>
+                        </div>
+                        <div class="btn-buy">
+                            <span>Acheter</span>
+                        </div>
+                    </div>
+                    
+                </div>                  -->           
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <h1>Pages</h1>
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="montres.html">Nos Montres</a></li>
+                    <li><a href="reparations.html">Réparations</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                </ul>
+                
+            </div>
+            <div class="container">
+                <h1>Nous contacter</h1>
+                <ul>
+                    <li>0492 17 54 63</li>
+                    <li>randomemail@gmail.com</li>
+                    <li><a href="">Notre Magasin</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <h1>Chahlal Legacy</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic odit molestiae quaerat corporis cupiditate consequatur sit illo iusto atque minus error ducimus deleniti explicabo perferendis nostrum esse aperiam, harum alias.</p>
+            </div>
+        </footer>
+        <script src="assets/js/headfoot.js"></script>
+        <script src="assets/js/search.js"></script>
+        <script src="assets/js/montres.js"></script>
+        <script src="assets/js/login.js"></script>
+    </body>
+</html>
